@@ -223,11 +223,11 @@ Final Score = (0.4 × Text Score) + (0.3 × Facial Score) + (0.3 × Audio Score)
 # 2. Mount Google Drive and update VIDEO_FOLDER path
 # 3. Dependencies are installed automatically by the first cells
 
-# Step 1 — Train and save the audio classifier
-Audio_predict__module__2_.ipynb
-
 # Step 2 — Run the full pipeline
 New_major_project__3_.ipynb
+
+# Step 2 — Train and save the audio classifier
+Audio_predict__module__2_.ipynb
 ```
 
 **Dependencies:**
