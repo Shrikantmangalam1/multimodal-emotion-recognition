@@ -57,7 +57,7 @@ multimodal-emotion-recognition/
 
 The pipeline follows a **sequential design with a parallel middle stage**. A single video input passes through three independent analytical modules, whose outputs are then fused into a final assessment.
 
-![System Architecture](plots/system_architecture.png)
+![System Architecture](https://raw.github.com/Shrikantmangalam1/multimodal-emotion-recognition/main/Diagram/System%20Architecture.png)
 
 **Pipeline stages:**
 1. **Input** — MP4 video → FFmpeg extracts WAV audio
@@ -77,7 +77,7 @@ The classifier detects **6 emotion categories**: `happy`, `sad`, `anxious`, `dep
 
 **Decision flow:**
 
-![Keyword Classifier Flowchart](plots/keyword_flowchart_page.png)
+![Keyword Classifier Flowchart](https://raw.github.com/Shrikantmangalam1/multimodal-emotion-recognition/main/Diagram/Keyword%20Classifier%20logic.png)
 
 **Emotion → Score mapping:**
 
@@ -113,7 +113,7 @@ The classifier detects **6 emotion categories**: `happy`, `sad`, `anxious`, `dep
 
 ### Feature Extraction Pipeline
 
-![Audio Feature Extraction Flowchart](plots/audio_feature_flowchart_page.png)
+![Audio Feature Extraction Flowchart](https://raw.github.com/Shrikantmangalam1/multimodal-emotion-recognition/main/Diagram/AudioFeature%20Extraction%20flowchart.png)
 
 A **16-dimensional feature vector** is extracted from each WAV file:
 
@@ -131,10 +131,10 @@ A **16-dimensional feature vector** is extracted from each WAV file:
 - Training labels = the **more negative** of text and facial labels (conservative strategy to prioritise at-risk detection)
 
 #### Confusion Matrix
-![Confusion Matrix](plots/confusion_matrix.png)
+![Confusion Matrix](https://raw.github.com/Shrikantmangalam1/multimodal-emotion-recognition/main/Diagram/Confusion%20Diagram.png)
 
 #### Feature Importance
-![Feature Importance](plots/feature_importance.png)
+![Feature Importance](https://raw.github.com/Shrikantmangalam1/multimodal-emotion-recognition/main/Diagram/Feature%20Importance%20Bar%20Chart.png)
 
 > MFCCs (especially MFCC_4, MFCC_6, MFCC_9) were the most discriminative features. RMS energy and average pitch also ranked highly as prosodic emotion markers.
 
@@ -144,7 +144,7 @@ A **16-dimensional feature vector** is extracted from each WAV file:
 
 ### Fusion Formula
 
-![Fusion Diagram](plots/fusion_diagram.png)
+![Fusion Diagram](https://raw.github.com/Shrikantmangalam1/multimodal-emotion-recognition/main/Diagram/Multimodel%20fusion%20Diagram.png)
 
 ```
 Final Score = (0.4 × Text Score) + (0.3 × Facial Score) + (0.3 × Audio Score)
@@ -168,10 +168,10 @@ Final Score = (0.4 × Text Score) + (0.3 × Facial Score) + (0.3 × Audio Score)
 ## 📊 Results
 
 ### Emotion Distribution — Text vs Facial (n=73)
-![Emotion Distribution](plots/emotion_distribution_page.png)
+![Emotion Distribution](http://raw.github.com/Shrikantmangalam1/multimodal-emotion-recognition/main/Diagram/emotion%20Distribution%20Bar%20Chart.png)
 
 ### Final Assessment Distribution
-![Final Assessment Distribution](plots/final_assessment_distribution_page.png)
+![Final Assessment Distribution](https://raw.github.com/Shrikantmangalam1/multimodal-emotion-recognition/main/Diagram/Final%20Assessment%20Distribution.png)
 
 | Assessment | Count | Percentage |
 |-----------|-------|-----------|
